@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WebSolutions</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>WebSolutions</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item active"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Our Staff</h1>
+            <p>Learn more about our mission, values, and the team behind WebSolutions</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2020, WebSolutions has been helping businesses establish their online presence with innovative web solutions. What started as a small team of passionate developers has grown into a full-service digital agency serving clients worldwide.</p>
+                    <p>We believe in the power of technology to transform businesses and create meaningful connections with customers. Our approach combines technical expertise with creative thinking to deliver solutions that drive real results.</p>
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses of all sizes with custom web solutions that enhance their digital presence, improve customer engagement, and drive growth through innovative technology.</p>
+                </div>
+                <div class="about-image">
+                    <img src="image/g.jpg" alt="Our team working together">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="image/p1.jpg" alt="John Doe - CEO">
+                    <div class="member-info">
+                        <h3>Perry</h3>
+                        <p>CEO & Founder</p>
+                        <p>With over 15 years in web development, John leads our team with vision and technical expertise.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="image/Danny-Schwarz.jpg.crdownload" alt="Jane Smith - Design Lead">
+                    <div class="member-info">
+                        <h3>Jane Smith</h3>
+                        <p>Design Lead</p>
+                        <p>Jane combines aesthetics with functionality to create stunning user experiences.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="image/happy-smile-portrait-indian-woman-600nw-2264254153.webp" alt="Mike Johnson - Developer">
+                    <div class="member-info">
+                        <h3>Mike Johnson</h3>
+                        <p>Senior Developer</p>
+                        <p>Mike specializes in building scalable, high-performance web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Innovation</h3>
+                    <p>We constantly explore new technologies and approaches to deliver cutting-edge solutions that give our clients a competitive edge.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Quality</h3>
+                    <p>Every project undergoes rigorous testing and quality assurance to ensure flawless performance and user experience.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Client Focus</h3>
+                    <p>We build lasting relationships by understanding our clients' unique needs and delivering solutions that exceed expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WebSolutions</h3>
+                    <p>Providing innovative web solutions since 2020 with a focus on quality and customer satisfaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>123 Web Street, Digital City</p>
+                    <p>info@websolutions.com</p>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 WebSolutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+        
+        // Set active link
+        const currentPage = location.pathname.split('/').pop();
+        document.querySelectorAll('.nav-item a').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.parentElement.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

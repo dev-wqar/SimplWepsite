@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member img {
+        height: auto; /* Avoid fixed heights for better scaling */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none; /* Ensure proper formatting */
+    }
+}
